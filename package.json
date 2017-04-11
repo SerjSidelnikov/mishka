@@ -1,0 +1,20 @@
+{
+  "name": "mishka",
+  "version": "1.0.0",
+  "description": "Личный проект «Мишка» от HTML Academy",
+  "private": true,
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SerjSidelnikov/mishka.git"
+  },
+  "author": "Сергей Сидельников",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SerjSidelnikov/mishka/issues"
+  },
+  "homepage": "https://github.com/SerjSidelnikov/mishka#readme"
+}
