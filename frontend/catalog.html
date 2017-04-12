@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__logo">
+        <a href="index.html">
+          <svg class="page-header__logo-svg" width="86" height="35">
+            <use xlink:href="img/mishka-logo-mobile.svg#mishka-logo-mobile.svg_copy"></use>
+          </svg>
+        </a>
+      </div>
+
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a>Катало товаров</a></li>
+          <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+
+      <h1 class="page-header__title">Каталог товаров</h1>
+    </header>
+
+    <main>
+      <section class="catalog">
+        <article class="catalog__item  catalog-item">
+          <div class="catalog-item__img">
+            <img src="img/photo-1-mobile.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+          </div>
+
+          <div class="catalog-item__description">
+            <h2 class="catalog-item__name">Зайчик-попрыгайчик</h2>
+            <span class="catalog-item__parameters">Рост 30 см, вес 200 г</span>
+            <span class="catalog-item__price">1 200 pуб.</span>
+          </div>
+        </article>
+
+        <article class="catalog__item  catalog-item">
+          <div class="catalog-item__img">
+            <img src="img/photo-2-mobile.jpg" width="260" height="195" alt="Корзинка для белья">
+          </div>
+
+          <div class="catalog-item__description">
+            <h2 class="catalog-item__name">Корзинка для белья</h2>
+            <span class="catalog-item__parameters">Диаметр 15 см, высота 10 см</span>
+            <span class="catalog-item__price">690 pуб.</span>
+          </div>
+        </article>
+
+        <article class="catalog__item  catalog-item">
+          <div class="catalog-item__img">
+            <img src="img/photo-3-mobile.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
+          </div>
+
+          <div class="catalog-item__description">
+            <h2 class="catalog-item__name">Большая корзинка для игрушек</h2>
+            <span class="catalog-item__parameters">Диаметр 30 см, высота 30 см</span>
+            <span class="catalog-item__price">1 500 pуб.</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="video-process">
+        <h2 class="video-process__name">Процесс производства</h2>
+        <div class="video-process__img">
+          <img src="img/play.jpg" width="260" height="150" alt="Процесс производства">
+        </div>
+
+        <p class="video-process__content">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+
+        <a class="btn  btn--video-progress" href="#">Сделать заказ</a>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <section class="page-footer__social">
+        <a href="#" class="page-footer__social-btn  page-footer__social-btn--inst">Инстаграм</a>
+        <a href="#" class="page-footer__social-btn  page-footer__social-btn--fb">Фейсбук</a>
+        <a href="#" class="page-footer__social-btn  page-footer__social-btn--tw">Твиттер</a>
+      </section>
+
+      <section class="page-footer__copyright">
+        Разработано
+        <svg class="page-footer__logo-svg" width="27" height="34">
+          <use xlink:href="img/htmlacademy.svg#htmlacademy.svg"></use>
+        </svg>
+      </section>
+    </footer>
+  </body>
+</html>
