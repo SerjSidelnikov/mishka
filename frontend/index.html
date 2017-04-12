@@ -8,7 +8,137 @@
   </head>
   <body>
     <header class="page-header">
+      <div class="page-header__logo">
+        <svg class="page-header__logo-svg" width="86" height="35">
+          <use xlink:href="img/mishka-logo-mobile.svg#mishka-logo-mobile.svg_copy"></use>
+        </svg>
+      </div>
 
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#">Катало товаров</a></li>
+          <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+
+      <h1 class="page-header__title">Милые штуки ручной работы для дома</h1>
     </header>
+
+    <main class="page-main">
+      <section class="features">
+        <div class="features__item">Предметы интерьера</div>
+        <div class="features__item">Детские игрушки</div>
+      </section>
+
+      <section class="benefits">
+        <h2 class="benefits__title">Вязаные корзинки</h2>
+        <span class="benefits__week">Товар недели</span>
+
+        <p class="benefits__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.</p>
+
+        <table class="benefits__table table-item">
+          <tr>
+            <td class="table-item__name">Цвет:</td>
+            <td class="table-item__value">&laquo;Тиффани&raquo;/серый</td>
+          </tr>
+          <tr>
+            <td class="table-item__name">Диаметр:</td>
+            <td class="table-item__value">25 см</td>
+          </tr>
+          <tr>
+            <td class="table-item__name">Высота:</td>
+            <td class="table-item__value">15 см</td>
+          </tr>
+        </table>
+
+        <div class="benefits__img">
+          <img src="img/triple-set-mobile.jpg" width="260" height="315" alt="Вязаные корзинки">
+        </div>
+
+        <span class="benefits__price">Цена: 990 руб.</span>
+
+        <a class="btn btn--benefits" href="#">Заказать</a>
+      </section>
+
+      <section class="advantage">
+        <ul class="advantage__list">
+          <li class="advantage__item">Экологически чистые материалы</li>
+          <li class="advantage__item">Скандинавский стиль по российской цене</li>
+          <li class="advantage__item">Увеличивает лайки на фотографиях</li>
+          <li class="advantage__item">Связано вручную с любовью и умилением</li>
+          <li class="advantage__item">Поддержка отечественного производителя</li>
+          <li class="advantage__item">Поставляется в подарочной упаковке</li>
+        </ul>
+      </section>
+
+      <section class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
+
+        <div class="reviews__items">
+          <article class="reviews__item item-reviews">
+            <p class="item-reviews__content">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <p class="item-reviews__name">Анастасия Красильникова</p>
+            <span class="item-reviews__nick">@misssssiskras</span>
+          </article>
+
+          <article class="reviews__item item-reviews">
+            <p class="item-reviews__content">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <p class="item-reviews__name">Анастасия Красильникова</p>
+            <span class="item-reviews__nick">@misssssiskras</span>
+          </article>
+
+          <article class="reviews__item item-reviews">
+            <p class="item-reviews__content">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <p class="item-reviews__name">Анастасия Красильникова</p>
+            <span class="item-reviews__nick">@misssssiskras</span>
+          </article>
+        </div>
+
+        <button class="reviews__btn reviews__btn--prev">Назад</button>
+        <button class="reviews__btn reviews__btn--next">Вперёд</button>
+
+        <a class="btn btn--reviews" href="#">Написать</a>
+      </section>
+
+      <section class="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+
+        <table class="contacts__address">
+          <tr>
+            <td class="contacts__address-name">e-mail:</td>
+            <td class="contacts__address-content">info@mimimishkashop.ru</td>
+          </tr>
+          <tr>
+            <td class="contacts__address-name">адрес:</td>
+            <td class="contacts__address-content">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+          </tr>
+        </table>
+
+        <div class="contacts__map" id="yandex-map"></div>
+
+        <a class="btn btn--contacts" href="#">Напишите нам</a>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <section class="page-footer__social">
+        <a href="#" class="page-footer__social-btn page-footer__social-btn--inst">Инстаграм</a>
+        <a href="#" class="page-footer__social-btn page-footer__social-btn--fb">Фейсбук</a>
+        <a href="#" class="page-footer__social-btn page-footer__social-btn--tw">Твиттер</a>
+      </section>
+
+      <section class="page-footer__copyright">
+        Разработано
+        <svg class="page-footer__logo-svg" width="27" height="34">
+          <use xlink:href="img/htmlacademy.svg#htmlacademy.svg"></use>
+        </svg>
+      </section>
+    </footer>
+
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A90d9e71f2eca6b4e065db0bf57c4dfa34bfca05f0a9615d6344507e0d3271fc1&amp;id=yandex-map&amp;width=100%25&amp;height=457&amp;lang=ru_RU&amp;scroll=true"></script>
   </body>
 </html>
