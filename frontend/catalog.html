@@ -2,9 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Academy: Мишка</title>
   </head>
   <body>
     <header class="page-header">
@@ -21,7 +22,7 @@
 
         <ul class="main-nav__list">
           <li class="main-nav__item"><a>Катало товаров</a></li>
-          <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
           <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
           <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
         </ul>
@@ -30,7 +31,7 @@
       <h1 class="page-header__title">Каталог товаров</h1>
     </header>
 
-    <main>
+    <main class="page-catalog">
       <section class="catalog">
         <article class="catalog__item  catalog-item">
           <div class="catalog-item__img">
@@ -95,5 +96,23 @@
         </svg>
       </section>
     </footer>
+
+    <section class="modal-content">
+      <h2 class="modal-content__title">Добавить в корзину</h2>
+      <form class="modal-content__form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="modal-content__form-title">Выберите размер:</p>
+
+        <input id="s" type="radio" name="size" checked>
+        <label for="s">S</label>
+
+        <input id="l" type="radio" name="size">
+        <label for="l">L</label>
+
+        <input id="m" type="radio" name="size">
+        <label for="m">M</label>
+
+        <button class="btn btn--modal-content" type="submit">Добавить</button>
+      </form>
+    </section>
   </body>
 </html>

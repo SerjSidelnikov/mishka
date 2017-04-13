@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__logo">
+        <a href="index.html">
+          <svg class="page-header__logo-svg" width="86" height="35">
+            <use xlink:href="img/mishka-logo-mobile.svg#mishka-logo-mobile.svg_copy"></use>
+          </svg>
+        </a>
+      </div>
+
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="catalog.html">Катало товаров</a></li>
+          <li class="main-nav__item"><a>Вязание на заказ</a></li>
+          <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+
+      <h1 class="page-header__title">Вязание на заказ</h1>
+    </header>
+
+    <main class="page-photo">
+      <div class="page-photo__promo">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</div>
+
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form-block  block-radio">
+          <span class="form-block__title  block-radio__title">Тип</span>
+
+          <div class="form-block__wrapper  block-radio__wrapper">
+            <input id="accessories" type="radio" name="type" checked>
+            <label for="accessories">Аксессуар для интерьера</label>
+
+            <input id="toys" type="radio" name="type">
+            <label for="toys">Детская игрушка</label>
+          </div>
+        </div>
+
+        <div class="form-block  block-checkbox">
+          <span class="form-block__title  block-checkbox__title">Цвет</span>
+
+          <div class="form-block__wrapper  block-checkbox__wrapper">
+            <input id="white" type="checkbox" name="white" checked>
+            <label for="white">Белый</label>
+
+            <input id="gray" type="checkbox" name="gray" checked>
+            <label for="gray">Серый</label>
+
+            <input id="tiffany" type="checkbox" name="tiffany">
+            <label for="tiffany">&laquo;Тиффани&raquo;</label>
+
+            <input id="black" type="checkbox" name="black">
+            <label for="black">Чёрный</label>
+
+            <input id="pink" type="checkbox" name="pink">
+            <label for="pink">Розовый</label>
+
+            <input id="orange" type="checkbox" name="orange">
+            <label for="orange">Оранжевый</label>
+          </div>
+        </div>
+
+        <div class="form-block  block-initials">
+          <span class="form-block__title  block-initials__title">ФИО</span>
+
+          <div class="form-block__wrapper  block-initials__wrapper">
+            <label>
+              <span class="block-initials__name">Имя:</span>
+              <input type="text" placeholder="Введите ваше имя*">
+            </label>
+
+            <label>
+              <span class="block-initials__name">Фамилия:</span>
+              <input type="text" placeholder="Укажите фамилию*">
+            </label>
+
+            <label>
+              <span class="block-initials__name">Отчество:</span>
+              <input type="text" placeholder="Отчество, если желаете">
+            </label>
+          </div>
+        </div>
+
+        <div class="form-block  block-info">
+          <span class="form-block__title  block-info__title">Тел</span>
+          <input type="tel" placeholder="+7 XXX XX XX*">
+
+          <span class="form-block__title  block-info__title">E-Mail</span>
+          <input type="email" placeholder="Ваш Email*">
+        </div>
+
+        <div class="form-block  block-reviews">
+          <span class="form-block__title  block-reviews__title">Доп</span>
+          <textarea name="reviews" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </div>
+
+        <div class="form-block  block-submit">
+          <p class="block-submit__info">*Поля обязательны для заполнения</p>
+          <button class="btn  btn--form" type="submit">Отправить заказ</button>
+        </div>
+      </form>
+    </main>
+
+    <footer class="page-footer">
+      <section class="page-footer__social">
+        <a href="#" class="page-footer__social-btn  page-footer__social-btn--inst">Инстаграм</a>
+        <a href="#" class="page-footer__social-btn  page-footer__social-btn--fb">Фейсбук</a>
+        <a href="#" class="page-footer__social-btn  page-footer__social-btn--tw">Твиттер</a>
+      </section>
+
+      <section class="page-footer__copyright">
+        Разработано
+        <svg class="page-footer__logo-svg" width="27" height="34">
+          <use xlink:href="img/htmlacademy.svg#htmlacademy.svg"></use>
+        </svg>
+      </section>
+    </footer>
+  </body>
+</html>
