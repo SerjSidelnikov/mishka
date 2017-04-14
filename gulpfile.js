@@ -54,7 +54,7 @@ gulp.task('build',  function (fn) {
 });
 
 gulp.task('html:copy', function () {
-  return gulp.src(['frontend/*.html', 'frontend/img/**'])
+  return gulp.src('frontend/*.html')
     .pipe(gulp.dest('build'));
 });
 
