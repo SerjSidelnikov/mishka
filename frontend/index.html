@@ -6,19 +6,22 @@
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo">
-        <a>
-          <svg class="page-header__logo-svg" width="86" height="35">
-            <use xlink:href="img/mishka-logo-mobile.svg#mishka-logo-mobile.svg_copy"></use>
-          </svg>
-        </a>
-      </div>
-
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <div class="page-header__logo">
+            <a>
+              <svg class="page-header__logo-svg" width="86" height="35">
+                <use xlink:href="img/mishka-logo-mobile.svg#mishka-logo-mobile.svg_copy"></use>
+              </svg>
+            </a>
+          </div>
+
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        </div>
 
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="catalog.html">Катало товаров</a></li>
@@ -28,7 +31,7 @@
         </ul>
       </nav>
 
-      <h1 class="page-header__title">Милые штуки ручной работы для дома</h1>
+      <h1 class="page-header__title">Милые штуки ручной работы&nbsp;для дома</h1>
     </header>
 
     <main class="page-main">
