@@ -70,4 +70,5 @@ gulp.task('serve', function () {
 
   gulp.watch('frontend/**', ['style']);
   gulp.watch('frontend/*.html', ['html:update']);
+  server.watch('build/**/*.*').on('change', server.reload);
 });
