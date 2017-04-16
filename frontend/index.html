@@ -15,19 +15,27 @@
           <div class="page-header__logo">
             <a>
               <svg class="page-header__logo-svg" width="86" height="35">
-                <use xlink:href="img/mishka-logo-mobile.svg#mishka-logo-mobile.svg_copy"></use>
+                <use xlink:href="img/mishka-logo-mobile.svg#mishka-logo-mobile"></use>
               </svg>
             </a>
           </div>
 
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <button class="main-nav__toggle  main-nav__toggle--closed" type="button">Открыть меню</button>
         </div>
 
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="catalog.html">Катало товаров</a></li>
-          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-          <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+        <ul class="main-nav__list main-nav__list--closed">
+          <li class="main-nav__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item  main-nav__item--search">
+          <a href="#">Поиск по сайту</a>
+        </li>
+          <li class="main-nav__item  main-nav__item--cart">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
         </ul>
       </nav>
 
@@ -36,53 +44,55 @@
 
     <main class="page-main">
       <section class="features">
-        <div class="features__item features__item--item-1">
-          <p class="features__text">Предметы интерьера</p>
+        <div class="features__item  features__item--item-1">
+          <p class="features__text  features__text--item-1">Предметы интерьера</p>
         </div>
-        <div class="features__item features__item--item-2">
-          <p class="features__text">Детские игрушки</p>
+        <div class="features__item  features__item--item-2">
+          <p class="features__text  features__text--item-2">Детские игрушки</p>
         </div>
       </section>
 
       <section class="benefits">
-        <h2 class="benefits__title">Вязаные корзинки</h2>
-        <span class="benefits__week">Товар недели</span>
+        <div class="benefits__wrapper">
+          <h2 class="benefits__title">Вязаные корзинки</h2>
+          <span class="benefits__week">Товар недели</span>
 
-        <p class="benefits__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.</p>
+          <p class="benefits__description">Экологически чистая пряжа, ручная&nbsp;работа. Доступны в шести расцветках, и трёх размерах.</p>
 
-        <table class="benefits__table  table-item">
-          <tr>
-            <td class="table-item__name">Цвет:</td>
-            <td class="table-item__value">&laquo;Тиффани&raquo;/серый</td>
-          </tr>
-          <tr>
-            <td class="table-item__name">Диаметр:</td>
-            <td class="table-item__value">25 см</td>
-          </tr>
-          <tr>
-            <td class="table-item__name">Высота:</td>
-            <td class="table-item__value">15 см</td>
-          </tr>
-        </table>
+          <table class="benefits__table  table-item">
+            <tr>
+              <td class="table-item__name">Цвет:</td>
+              <td class="table-item__value">&laquo;Тиффани&raquo;/серый</td>
+            </tr>
+            <tr>
+              <td class="table-item__name">Диаметр:</td>
+              <td class="table-item__value">25 см</td>
+            </tr>
+            <tr>
+              <td class="table-item__name">Высота:</td>
+              <td class="table-item__value">15 см</td>
+            </tr>
+          </table>
 
-        <div class="benefits__img">
-          <img src="img/triple-set-mobile.jpg" width="260" height="315" alt="Вязаные корзинки">
+          <div class="benefits__img">
+            <img src="img/triple-set-mobile.jpg" width="260" height="315" alt="Вязаные корзинки">
+          </div>
+
+          <span class="benefits__price">Цена: 990 руб.</span>
+
+          <a class="btn  btn--benefits" href="#">Заказать</a>
         </div>
-
-        <span class="benefits__price">Цена: 990 руб.</span>
-
-        <a class="btn  btn--benefits" href="#">Заказать</a>
       </section>
 
       <section class="advantage">
         <h2 class="advantage__title">Коротко о нас:</h2>
         <ul class="advantage__list">
-          <li class="advantage__item">Экологически чистые материалы</li>
-          <li class="advantage__item">Скандинавский стиль по российской цене</li>
-          <li class="advantage__item">Увеличивает лайки на фотографиях</li>
-          <li class="advantage__item">Связано вручную с любовью и умилением</li>
-          <li class="advantage__item">Поддержка отечественного производителя</li>
-          <li class="advantage__item">Поставляется в подарочной упаковке</li>
+          <li class="advantage__item  advantage__item--item-1">Экологически чистые материалы</li>
+          <li class="advantage__item  advantage__item--item-2">Скандинавский стиль по российской цене</li>
+          <li class="advantage__item  advantage__item--item-3">Увеличивает лайки на фотографиях</li>
+          <li class="advantage__item  advantage__item--item-4">Связано вручную с любовью и умилением</li>
+          <li class="advantage__item  advantage__item--item-5">Поддержка отечественного производителя</li>
+          <li class="advantage__item  advantage__item--item-6">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
 
@@ -109,8 +119,10 @@
           </article>
         </div>
 
-        <button class="reviews__btn  reviews__btn--prev">Назад</button>
-        <button class="reviews__btn  reviews__btn--next">Вперёд</button>
+        <div class="reviews__btn-block">
+          <button class="reviews__btn  reviews__btn--prev">Назад</button>
+          <button class="reviews__btn  reviews__btn--next">Вперёд</button>
+        </div>
 
         <a class="btn  btn--reviews" href="#">Написать</a>
       </section>
@@ -121,7 +133,9 @@
         <table class="contacts__address">
           <tr>
             <td class="contacts__address-name">e-mail:</td>
-            <td class="contacts__address-content">info@mimimishkashop.ru</td>
+            <td class="contacts__address-content">
+              <span class="contacts__email">info@mimimishkashop.ru</span>
+            </td>
           </tr>
           <tr>
             <td class="contacts__address-name">адрес:</td>
@@ -146,7 +160,7 @@
         <section class="page-footer__copyright">
           Разработано
           <svg class="page-footer__logo-svg" width="27" height="34">
-            <use xlink:href="img/htmlacademy.svg#htmlacademy.svg"></use>
+            <use xlink:href="img/htmlacademy.svg#htmlacademy"></use>
           </svg>
         </section>
       </div>
@@ -171,5 +185,7 @@
     </section>
 
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A90d9e71f2eca6b4e065db0bf57c4dfa34bfca05f0a9615d6344507e0d3271fc1&amp;id=yandex-map&amp;width=100%25&amp;height=457&amp;lang=ru_RU&amp;scroll=true"></script>
+
+    <script src="js/menu.js"></script>
   </body>
 </html>

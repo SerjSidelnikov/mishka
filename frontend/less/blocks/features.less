@@ -1,5 +1,6 @@
 .features {
   margin-top: -70px;
+  margin-bottom: 30px;
   color: #ffffff;
 }
 
@@ -15,9 +16,32 @@
 }
 
 .features__text {
-  width: 260px;
-  margin: 0 auto;
+  position: relative;
+  .container();
   padding: 25px 0;
   padding-right: 155px;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
   box-sizing: border-box;
+
+  &--item-1::after {
+    content: '';
+    position: absolute;
+    width: 41px;
+    height: 62px;
+    top: 18px;
+    right: 0;
+    background: url("../img/interior.svg") no-repeat center;
+  }
+
+  &--item-2::after {
+    content: '';
+    position: absolute;
+    width: 61px;
+    height: 61px;
+    top: 18px;
+    right: -9px;
+    background: url("../img/toy.svg") no-repeat right;
+  }
 }

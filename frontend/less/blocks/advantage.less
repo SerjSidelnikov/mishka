@@ -1,9 +1,76 @@
 .advantage {
   .container();
+  margin-bottom: 55px;
+}
+
+.advantage__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
 }
 
 .advantage__list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.advantage__item {
+  position: relative;
+  margin-bottom: 25px;
+  padding-top: 55px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &--item-1::before {
+    width: 33px;
+    height: 38px;
+    background: url("../img/icon-1.svg") no-repeat center;
+  }
+
+  &--item-2::before {
+    width: 47px;
+    height: 27px;
+    background: url("../img/icon-2.svg") no-repeat center;
+  }
+
+  &--item-3::before {
+    width: 34px;
+    height: 27px;
+    background: url("../img/icon-3.svg") no-repeat center;
+  }
+
+  &--item-4::before {
+    width: 35px;
+    height: 34px;
+    background: url("../img/icon-4.svg") no-repeat center;
+  }
+
+  &--item-5::before {
+    width: 55px;
+    height: 23px;
+    background: url("../img/icon-5.svg") no-repeat center;
+  }
+
+  &--item-6::before {
+    width: 33px;
+    height: 32px;
+    background: url("../img/icon-6.svg") no-repeat center;
+  }
 }

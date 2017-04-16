@@ -1,8 +1,66 @@
 .benefits {
+  position: relative;
+  margin-bottom: 60px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 7px;
+    margin-top: 30px;
+    background: url("../img/zigzag-line-desktop.svg") repeat-x;
+  }
+}
+
+.benefits__wrapper {
   .container();
+}
+
+.benefits__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.benefits__week {
+  display: inline-block;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+.benefits__description {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.benefits__table {
+  width: 100%;
+  margin-bottom: 25px;
+  line-height: 20px;
+}
+
+.benefits__img {
+  margin-bottom: 25px;
+
+  & img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .benefits__price {
   display: block;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
   text-align: center;
 }
