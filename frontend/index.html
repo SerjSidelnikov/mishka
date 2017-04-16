@@ -12,31 +12,42 @@
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <div class="page-header__logo">
+          <div class="main-nav__wrap-logo">
             <a>
-              <svg class="page-header__logo-svg" width="86" height="35">
-                <use xlink:href="img/mishka-logo-mobile.svg#mishka-logo-mobile"></use>
-              </svg>
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+                <img src="img/mishka-logo-mobile.svg" alt="Мишка">
+              </picture>
             </a>
+
+            <button class="main-nav__toggle  main-nav__toggle--closed" type="button">Открыть меню</button>
           </div>
 
-          <button class="main-nav__toggle  main-nav__toggle--closed" type="button">Открыть меню</button>
+          <ul class="main-nav__list main-nav__list--closed">
+            <li class="main-nav__item  main-nav__item--catalog">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--order">
+              <a href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--search">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--cart">
+              <a href="#">Корзина: пока пуста</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--new">
+              <a href="#">Новые поступления</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--sale">
+              <a href="#">Распродажа</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--hidden">
+              <span>Бесплатная доставка по России</span>
+            </li>
+          </ul>
         </div>
-
-        <ul class="main-nav__list main-nav__list--closed">
-          <li class="main-nav__item">
-            <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="main-nav__item  main-nav__item--search">
-          <a href="#">Поиск по сайту</a>
-        </li>
-          <li class="main-nav__item  main-nav__item--cart">
-            <a href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
       </nav>
 
       <h1 class="page-header__title">Милые штуки ручной работы&nbsp;для дома</h1>
