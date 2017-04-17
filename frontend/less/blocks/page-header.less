@@ -2,6 +2,12 @@
   min-height: 420px;//780
   padding-bottom: 20px;
   background: #f9f9f9 url("../img/hero-mobile.jpg") no-repeat bottom;
+
+  &--catalog {
+    min-height: 255px;
+    margin-bottom: 30px;
+    background-image: none;
+  }
 }
 
 .page-header__title {
@@ -18,18 +24,45 @@
   .page-header {
     min-height: 835px;
     background: #f9f9f9 url("../img/hero-tablet.jpg") no-repeat bottom;
+
+    &--catalog {
+      position: relative;
+      min-height: 315px;
+      margin-bottom: 75px;
+      background-image: none;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 24px;
+        background: url("../img/zigzag-fill-desktop.svg") repeat-x center;
+      }
+    }
   }
 
   .page-header__title {
     margin-top: 175px;
     font-size: 43px;
     line-height: 50px;
+
+    &--catalog {
+      margin-top: 95px;
+    }
   }
 }
 
 @media (min-width: 1150px) {
   .page-header {
     background: #f9f9f9 url("../img/hero-desktop.jpg") no-repeat bottom;
+
+    &--catalog {
+      min-height: 345px;
+      margin-bottom: 120px;
+      background-image: none;
+    }
   }
 
   .page-header__title {
