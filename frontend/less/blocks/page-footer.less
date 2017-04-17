@@ -6,6 +6,10 @@
   .container();
 }
 
+.page-footer__logo {
+  display: none;
+}
+
 .page-footer__social {
   display: flex;
   justify-content: space-between;
@@ -49,4 +53,34 @@
 
 .page-footer__logo-svg {
   margin-left: 30px;
+}
+
+@media (min-width: 768px) {
+  .page-footer__wrapper {
+    display: flex;
+    padding-top: 45px;
+    padding-bottom: 50px;
+  }
+
+  .page-footer__logo {
+    display: block;
+    width: 102px;
+    height: 34px;
+    margin-right: 155px;
+
+    &--line {
+      display: none;
+    }
+  }
+
+  .page-footer__social {
+    width: 145px;
+    margin-right: 80px;
+    padding: 0;
+  }
+
+  .page-footer__copyright {
+    padding: 0;
+    border: none;
+  }
 }

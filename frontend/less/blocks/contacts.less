@@ -29,3 +29,43 @@
 .contacts__map {
   margin-bottom: 35px;
 }
+
+@media (min-width: 768px) {
+  .contacts {
+    padding-top: 65px;
+  }
+
+  .contacts__title {
+    position: relative;
+    margin-bottom: 50px;
+    font-size: 43px;
+    line-height: 50px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -20px;
+      right: 0;
+      width: 47px;
+      height: 81px;
+      background: url("../img/flag.svg") no-repeat center;
+    }
+  }
+
+  .contacts__address {
+    margin-bottom: 55px;
+    font-size: 17px;
+
+    & tbody {
+      display: flex;
+    }
+
+    & tr {
+      width: 334px;
+    }
+  }
+
+  .contacts__map {
+    margin-bottom: 55px;
+  }
+}

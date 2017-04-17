@@ -45,3 +45,29 @@
     background: url("../img/toy.svg") no-repeat right;
   }
 }
+
+@media (min-width: 768px) {
+  .features {
+    display: flex;
+    .container();
+  }
+
+  .features__item {
+    margin-top: -120px;
+  }
+
+  .features__text {
+    width: 334px;
+    padding: 30px 35px;
+    padding-right: 165px;
+
+    &--item-1::after {
+      right: 30px;
+    }
+
+    &--item-2::after {
+      top: 23px;
+      right: 30px;
+    }
+  }
+}

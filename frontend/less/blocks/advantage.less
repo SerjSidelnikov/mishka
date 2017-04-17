@@ -74,3 +74,34 @@
     background: url("../img/icon-6.svg") no-repeat center;
   }
 }
+
+@media (min-width: 768px) {
+  .advantage {
+    padding-top: 55px;
+    margin-bottom: 80px;
+  }
+
+  .advantage__title {
+    margin-bottom: 40px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .advantage__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 410px;
+  }
+
+  .advantage__item {
+    width: 334px;
+    margin-bottom: 55px;
+    font-size: 20px;
+    line-height: 22px;
+
+    &:nth-child(3n) {
+      margin-bottom: 0;
+    }
+  }
+}
