@@ -33,6 +33,7 @@
     top: 18px;
     right: 0;
     background: url("../img/interior.svg") no-repeat center;
+    opacity: 0.5;
   }
 
   &--item-2::after {
@@ -42,7 +43,8 @@
     height: 61px;
     top: 18px;
     right: -9px;
-    background: url("../img/toy.svg") no-repeat right;
+    background: url("../img/toy.svg") no-repeat center;
+    opacity: 0.5;
   }
 }
 
@@ -69,5 +71,14 @@
       top: 23px;
       right: 30px;
     }
+  }
+}
+
+@media (min-width: 1150px) {
+  .features__text {
+    width: 525px;
+    padding-right: 350px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }

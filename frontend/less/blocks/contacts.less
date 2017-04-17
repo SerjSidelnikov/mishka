@@ -1,3 +1,19 @@
+.contacts {
+  position: relative;
+  padding-top: 40px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 7px;
+    background: url("../img/zigzag-line-desktop.svg") repeat-x;
+  }
+}
+
 .contacts__title {
   .container();
   margin-bottom: 35px;
@@ -32,7 +48,11 @@
 
 @media (min-width: 768px) {
   .contacts {
-    padding-top: 65px;
+    padding-top: 75px;
+
+    &::before {
+      height: 17px;
+    }
   }
 
   .contacts__title {
@@ -67,5 +87,55 @@
 
   .contacts__map {
     margin-bottom: 55px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .contacts {
+    margin-bottom: 100px;
+    padding-top: 90px;
+
+    &::before {
+      height: 23px;
+    }
+  }
+
+  .contacts__wrapper {
+    .container();
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 457px;
+    padding-left: 175px;
+    box-sizing: border-box;
+  }
+
+  .contacts__title {
+    width: 350px;
+    margin-top: 57px;
+    font-size: 53px;
+    line-height: 57px;
+
+    &::before {
+      left: -95px;
+      top: -10px;
+    }
+  }
+
+  .contacts__address {
+    width: 350px;
+    margin: 0;
+    padding-right: 10px;
+    margin-bottom: 80px;
+
+    & tbody {
+      display: table;
+    }
+  }
+
+  .contacts__map {
+    order: 2;
+    width: 525px;
+    height: 457px;
   }
 }

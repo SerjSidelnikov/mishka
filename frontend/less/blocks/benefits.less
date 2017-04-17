@@ -139,3 +139,63 @@
     line-height: 24px;
   }
 }
+
+@media (min-width: 1150px) {
+  .benefits {
+    padding-top: 70px;
+    margin-bottom: 93px;
+
+    &::before {
+      top: -15px;
+      height: 34px;
+    }
+
+    &::after {
+      height: 23px;
+      margin-top: 70px;
+    }
+  }
+
+  .benefits__wrapper {
+    position: relative;
+  }
+
+  .benefits__wrap-title {
+    position: absolute;
+    justify-content: flex-start;
+  }
+
+  .benefits__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .benefits__week {
+    order: -1;
+    width: 170px;
+    margin-right: 0;
+    padding: 0 40px;
+    padding-top: 45px;
+    box-sizing: border-box;
+  }
+
+  .benefits__wrap-content {
+    width: 875px;
+    height: 636px;
+    margin-left: auto;
+  }
+
+  .benefits__description {
+    padding-top: 160px;
+    margin-bottom: 60px;
+  }
+
+  .benefits__table {
+    margin-bottom: 92px;
+  }
+
+  .benefits__img {
+    width: 525px;
+    height: 636px;
+  }
+}

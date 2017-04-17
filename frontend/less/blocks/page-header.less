@@ -17,12 +17,24 @@
 @media (min-width: 768px) {
   .page-header {
     min-height: 835px;
-    background: #f9f9f9 url("../img/hero-desktop.jpg") no-repeat bottom;
+    background: #f9f9f9 url("../img/hero-tablet.jpg") no-repeat bottom;
   }
 
   .page-header__title {
     margin-top: 175px;
     font-size: 43px;
     line-height: 50px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-header {
+    background: #f9f9f9 url("../img/hero-desktop.jpg") no-repeat bottom;
+  }
+
+  .page-header__title {
+    width: 700px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
