@@ -24,18 +24,34 @@
     width: 22px;
     height: 21px;
     background: url("../img/insta.svg") no-repeat center;
+
+    &:hover {
+      background: url("../img/insta-hover.svg") no-repeat center;
+    }
   }
 
   &--fb {
     width: 15px;
     height: 29px;
     background: url("../img/fb.svg") no-repeat center;
+
+    &:hover {
+      background: url("../img/fb-hover.svg") no-repeat center;
+    }
   }
 
   &--tw {
     width: 24px;
     height: 20px;
     background: url("../img/tw.svg") no-repeat center;
+
+    &:hover {
+      background: url("../img/tw-hover.svg") no-repeat center;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -51,8 +67,27 @@
   border-top: 1px solid #e5e5e5;
 }
 
+.page-footer__logo-mishka {
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .page-footer__logo-svg {
   margin-left: 30px;
+  fill: #63d1bb;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 768px) {

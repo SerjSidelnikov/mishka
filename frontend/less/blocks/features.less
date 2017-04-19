@@ -8,22 +8,36 @@
 
   &--item-1 {
     background-color: #63d1bb;
+     &:hover {
+       background-color: #59d5bc;
+     }
   }
 
   &--item-2 {
     background-color: #56c3b2;
+
+    &:hover {
+      background-color: #46c1ae;
+    }
   }
 }
 
 .features__text {
   position: relative;
+  display: block;
   .container();
   padding: 25px 0;
   padding-right: 155px;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
   box-sizing: border-box;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &--item-1::after {
     content: '';
