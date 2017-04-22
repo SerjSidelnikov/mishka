@@ -11,6 +11,8 @@ const autoprefixer = require('autoprefixer');
 const mqpacker = require('css-mqpacker');
 const minify = require('gulp-csso');
 const rename = require('gulp-rename');
+const imagemin = require('gulp-imagemin');
+const uglify = require('gulp-uglify');
 const del = require('del');
 const run = require('run-sequence');
 const server = require('browser-sync').create();
@@ -21,13 +23,39 @@ gulp.task('style', function () {
     .pipe(less())
     .pipe(postcss([
       mqpacker({sort: true}),
-      autoprefixer(['last 2 versions'])
+      autoprefixer({browsers: ['last 2 versions']})
     ]))
     .pipe(gulp.dest('build/css'))
     .pipe(minify())
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css'))
     .pipe(server.stream());
+});
+
+gulp.task('images', function () {
+  return gulp.src('build/img/**/*.{png,jpg}')
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true})
+    ]))
+    .pipe(gulp.dest('build/img'));
+});
+
+gulp.task('uglify', function () {
+  return gulp.src('build/js/menu.js')
+    .pipe(uglify())
+    .pipe(rename('menu.min.js'))
+    .pipe(gulp.dest('build/js'));
+});
+
+gulp.task('html:copy', function () {
+  return gulp.src('frontend/*.html')
+    .pipe(gulp.dest('build'));
+});
+
+gulp.task('html:update', ['html:copy'], function (fn) {
+  server.reload();
+  fn();
 });
 
 gulp.task('copy', function () {
@@ -49,18 +77,10 @@ gulp.task('build',  function (fn) {
     'clean',
     'copy',
     'style',
+    'images',
+    'uglify',
     fn
   );
-});
-
-gulp.task('html:copy', function () {
-  return gulp.src('frontend/*.html')
-    .pipe(gulp.dest('build'));
-});
-
-gulp.task('html:update', ['html:copy'], function (fn) {
-  server.reload();
-  fn();
 });
 
 gulp.task('serve', function () {
@@ -70,5 +90,4 @@ gulp.task('serve', function () {
 
   gulp.watch('frontend/**', ['style']);
   gulp.watch('frontend/*.html', ['html:update']);
-  server.watch('build/**/*.*').on('change', server.reload);
 });
