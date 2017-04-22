@@ -249,25 +249,31 @@
     </footer>
 
     <section class="modal-content">
-      <h2 class="modal-content__title">Добавить в корзину</h2>
-      <form class="modal-content__form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="modal-content__form-title">Выберите размер:</p>
+      <div class="modal-content__wrapper">
+        <h2 class="modal-content__title">Добавить в корзину</h2>
+        <form class="modal-content__form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="modal-content__form-title">Выберите размер:</p>
 
-        <input id="s" type="radio" name="size" checked>
-        <label for="s">S</label>
+          <div class="modal-content__form-wrap">
+            <input id="s" type="radio" name="size" checked>
+            <label class="modal-content__label" for="s">S</label>
 
-        <input id="l" type="radio" name="size">
-        <label for="l">L</label>
+            <input id="m" type="radio" name="size">
+            <label class="modal-content__label" for="m">M</label>
 
-        <input id="m" type="radio" name="size">
-        <label for="m">M</label>
+            <input id="l" type="radio" name="size">
+            <label class="modal-content__label" for="l">L</label>
+          </div>
 
-        <button class="btn btn--modal-content" type="submit">Добавить</button>
-      </form>
+          <button class="btn btn--modal-content" type="submit">Добавить</button>
+        </form>
+      </div>
     </section>
+
+    <div class="modal-overlay"></div>
 
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A90d9e71f2eca6b4e065db0bf57c4dfa34bfca05f0a9615d6344507e0d3271fc1&amp;id=yandex-map&amp;width=100%25&amp;height=457&amp;lang=ru_RU&amp;scroll=true"></script>
 
-    <script src="js/menu.min.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

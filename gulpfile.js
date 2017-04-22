@@ -42,9 +42,9 @@ gulp.task('images', function () {
 });
 
 gulp.task('uglify', function () {
-  return gulp.src('build/js/menu.js')
+  return gulp.src('build/js/script.js')
     .pipe(uglify())
-    .pipe(rename('menu.min.js'))
+    .pipe(rename('script.min.js'))
     .pipe(gulp.dest('build/js'));
 });
 
